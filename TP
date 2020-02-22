@@ -1,0 +1,168 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Chapitre{
+    char nomchapitre[50];
+    int gold;
+    int PV;
+    };
+
+ typedef struct Chapitre chapitre;
+
+ int main(){
+
+ 	chapitre un = {"L'aventure d'un chien-loup",20,10};
+ 	chapitre deux = {"Le combat pour la survie",50,30};
+ 	chapitre trois = {"La création de la meute",100,60};
+ 	chapitre quatre = {"La quête des lambi saint",300,100};
+
+ 	float PV = 100.0;
+ 	int choix ;
+ 	int action = 0;
+    int goldPlayer = 10 ;
+
+ 	int chapitre1 = 0;
+    int chapitre2 = 0;
+    int chapitre3 = 0;
+    int chapitre4 = 0;
+
+    while (goldPlayer > 0){
+
+    
+    printf("Bienvenue voyageur! \n ");
+    printf("Laissez-moi-vous conter l'histoire des chiens-loups! \n \n ");
+    printf("-------- CHAPITRE 1 -------- \n ");
+    printf("La naissance d'un chien-loup. \n \n ");
+
+    printf("Dans des temps ancestraux un chien-loup vécut dans le méandre le plus sombre à l'affût de toute proie. \n ");
+    printf("Un jour se chien-loup décida de partir a au découvert du monde afin d'étancher sa soif de connaissances. \n ");
+    printf("Il prit l'équipement de son défin grand frère ainsi qu'une bourse est partie en laissant tout derrière lui. \n \n ");
+
+    printf("Voulez vous poursuivre lh'istoire ? \n [1] oui \n [2] non \n");
+    scanf("%d", &choix);
+    goldPlayer = goldPlayer + chapitre.gold;
+    chapitre1 = chapitre1 + 1;
+    printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+
+     if (choix == 1){
+     	printf("Quelle chapitre dois je vous contez ? \n [1] chapitre 2 \n [2] chapitre3 \n [3] chapitre 4 \n ");
+     	scanf("%d", &choix);
+    
+     	if (choix == 1){
+     		printf("-------- CHAPITRE 2 -------- \n ");
+  	    	printf("Le combat pour la survie. \n \n ");
+
+   	    	printf("Après ces début notre chien-loup connu de nombreus obstacle. \n ");
+   	    	printf("Chaque jour était une bataille afin de survivre, notre chien-loup était à bout de ces resources. \n ");
+   	    	printf("Il du être un fin stratège et guerrier pour passez au delà de ces sombre et puissant obstacles. \n \n ");
+   	    	goldPlayer = goldPlayer + chapitre.gold;
+   	    	chapitre2 = chapitre2 + 1;
+    		printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+
+   	    		printf("Voulez vous poursuivre lh'istoire ? \n [1] oui \n [2] non \n");
+    			scanf("%d", &choix);
+
+    				if (choix == 1){
+     				printf("Quelle chapitre dois je vous contez ? \n [1] chapitre 3 \n [2] chapitre4 \n");
+     				scanf("%d", &choix);
+
+     					if (choix == 1){
+     						printf("-------- CHAPITRE 3 -------- \n ");
+  	   						printf("La création de la meute. \n \n ");
+
+   	   						printf("Le chien-loup sentit son aventure de plus en plus difficile. \n ");
+   	   						printf("Il prit la décision de se rendre dans les endroits les plus humides et obscurs afin de trouver des alliés forgés de la même trempe que lui. \n ");
+   	   						printf("Arrivera-t-il à rassembler une telle guilde. \n \n");
+   	   						goldPlayer = goldPlayer + chapitre.gold;
+   	   						chapitre3 = chapitre3 + 1
+    						printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   					
+   	   							printf("Voulez vous poursuivre lh'istoire ? \n [1] oui \n [2] non \n");
+    							scanf("%d", &choix);
+
+    								if (choix == 1){
+   	   								printf("-------- CHAPITRE 4 -------- \n ");
+  	   								printf("La quête des lambi saint. \n \n ");
+
+   	   								printf("La meute des chiens-loups partie en quête des artefact sacré du divin lambi. \n ");
+   	   								printf("Au coté de notre chien-loup les légended de la guerre, Eloi le chamanique, Djühl le pernicieux, Le Zigsageur, le Vieux cèdre et T¤ma avait rejoind la bataille. \n ");
+   	   								printf("les légendes de la guerre décidairent de donner un nom de guerre à notre chien-loup. Il devient le Kokeur. \n ");
+   	   								printf("L'appel du lambi fit perdre la tête à plus d'un aventurier qui voulut acquérir cet artefact. \n ");
+   	   								printf("Arriveront-ils à accomplir cette quête. \n \n");
+   	   								goldPlayer = goldPlayer + chapitre.gold;
+   	   								chapitre4 = chapitre4 + 1
+   									printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   						   
+   	   						}			
+   	   					}
+
+   	   					if (choix == 2){
+   	   						printf("-------- CHAPITRE 4 -------- \n ");
+  	   						printf("La quête des lambi saint. \n \n ");
+
+   	   						printf("La meute des chiens-loups partie en quête des artefact sacré du divin lambi. \n ");
+   	   						printf("Au coté de notre chien-loup les légended de la guerre, Eloi le chamanique, Djühl le pernicieux, Le Zigsageur, le Vieux cèdre et T¤ma avait rejoind la bataille. \n ");
+   	   						printf("les légendes de la guerre décidairent de donner un nom de guerre à notre chien-loup. Il devient le Kokeur. \n ");
+   	   						printf("L'appel du lambi fit perdre la tête à plus d'un aventurier qui voulut acquérir cet artefact. \n ");
+   	   						printf("Arriveront-ils à accomplir cette quête. \n \n");
+   	   						goldPlayer = goldPlayer + chapitre.gold;
+   	   						chapitre4 = chapitre4 + 1
+    						printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   					}
+
+ 					}
+   		}
+
+   			if (choix == 2){
+   				printf("-------- CHAPITRE 3 -------- \n ");
+  	   			printf("La création de la meute. \n \n ");
+
+   	   			printf("Le chien-loup sentit son aventure de plus en plus difficile. \n ");
+   	   			printf("Il prit la décision de se rendre dans les endroits les plus humides et obscurs afin de trouver des alliés forgés de la même trempe que lui. \n ");
+   	   			printf("Arrivera-t-il à rassembler une telle guilde. \n \n");
+   	   			goldPlayer = goldPlayer + chapitre.gold;
+   	   			chapitre3 = chapitre3 + 1
+    			printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   		
+   	   				printf("Voulez vous poursuivre lh'istoire ? \n [1] oui \n [2] non \n");
+    				scanf("%d", &choix);
+
+    						if (choix == 1){
+   	   						printf("-------- CHAPITRE 4 -------- \n ");
+  	   						printf("La quête des lambi saint. \n \n ");
+
+   	   						printf("La meute des chiens-loups partie en quête des artefact sacré du divin lambi. \n ");
+   	   						printf("Au coté de notre chien-loup les légended de la guerre, Eloi le chamanique, Djühl le pernicieux, Le Zigsageur, le Vieux cèdre et T¤ma avait rejoind la bataille. \n ");
+   	   						printf("les légendes de la guerre décidairent de donner un nom de guerre à notre chien-loup. Il devient le Kokeur. \n ");
+   	   						printf("L'appel du lambi fit perdre la tête à plus d'un aventurier qui voulut acquérir cet artefact. \n ");
+   	   						printf("Arriveront-ils à accomplir cette quête. \n \n");
+   	   						goldPlayer = goldPlayer + chapitre.gold;
+   	   						chapitre4 = chapitre4 + 1
+    						printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   						   
+   	   					}			
+   	   		}
+
+   	   			if (choix == 3){
+   	   				printf("-------- CHAPITRE 4 -------- \n ");
+  	   				printf("La quête des lambi saint. \n \n ");
+
+   	   				printf("La meute des chiens-loups partie en quête des artefact sacré du divin lambi. \n ");
+   	   				printf("Au coté de notre chien-loup les légended de la guerre, Eloi le chamanique, Djühl le pernicieux, Le Zigsageur, le Vieux cèdre et T¤ma avait rejoind la bataille. \n ");
+   	   				printf("les légendes de la guerre décidairent de donner un nom de guerre à notre chien-loup. Il devient le Kokeur. \n ");
+   	   				printf("L'appel du lambi fit perdre la tête à plus d'un aventurier qui voulut acquérir cet artefact. \n ");
+   	   				printf("Arriveront-ils à accomplir cette quête. \n \n ");
+   	   				goldPlayer = goldPlayer + chapitre.gold;
+   	   				chapitre4 = chapitre4 + 1
+    				printf("Durant ce chapitre notre chien-loup a gagné : %d\n", goldPlayer);
+   	   			}	
+   	   		}
+   	   		
+   	   					if (choix == 2){
+     					printf("Bin barre toi j'ai d'autre clients!\n");
+     					}
+
+ 								printf("Merci d'avoir prétez l'oreille et ouvrez l'oeil les chiens-loups ne sont jamais loin! \n");
+ 							}
+   return 0;
+}
